@@ -11,7 +11,7 @@
 }
 
 body{
- max-width: 1400px;
+ min-width: 1200px;
  margin: 0 auto;
 }
 
@@ -34,4 +34,45 @@ header > h1{
 
 header > h1> span{
     color: brown;
+}
+
+.navegação-primária{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navegação-primária li a{
+    padding: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.section-div {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div{
+    margin-top: 60px;
+    display: grid;
+    align-self: self-start;
+    gap: 30px;
+}
+
+.section-div div h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+.section-div div p{
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #f7f7f7;
 }
