@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
 *{
+    font-family: 'Poppins';
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -11,24 +12,25 @@
 }
 
 body{
- min-width: 1200px;
+ max-width: 1200px;
  margin: 0 auto;
+ background-color: black;
 }
 
 
 /* HEADER */
 
 header{
-    background-color: black;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 header > h1{
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
 
 }
 
@@ -45,7 +47,7 @@ header > h1> span{
 .navegação-primária li a{
     padding: 10px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .section-div {
@@ -56,10 +58,12 @@ header > h1> span{
     align-items: center;
     gap: 60px;
     padding: 60px;
+    justify-items: center;
+
 }
 
 .section-div div{
-    margin-top: 60px;
+    margin-top: 120px;
     display: grid;
     align-self: self-start;
     gap: 30px;
@@ -69,10 +73,31 @@ header > h1> span{
     font-family: 'Poppins';
     font-weight: 600;
     color: #f7f7f7;
+    font-size: 2rem;
+    margin-bottom: -25px;
 }
 
 .section-div div p{
     font-family: 'Poppins';
     font-weight: 200;
+    margin-top: 15px;
     color: #f7f7f7;
+}
+
+.section-div div a {
+    justify-self: start;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.432);
+}
+
+.section-div img{
+    max-width:1000px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.116);
 }
