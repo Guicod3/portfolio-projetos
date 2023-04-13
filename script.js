@@ -1,10 +1,12 @@
-function ativaletra(elemento){
+function ativaLetra(elemento){
     const arrTexto = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
     arrTexto.forEach((Letra, i)=>{
         setTimeout(()=>{
-            elemento.innerHTML += letra;
+            elemento.innerHTML += Letra;
         }, 75 * i);
     });
 }
 
 const titulo = document.querySelector('.digitando');
+ativaLetra(titulo);
