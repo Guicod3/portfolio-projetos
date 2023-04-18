@@ -139,6 +139,7 @@ header > h1> span{
 
 main{
     background-color: #111;
+    border-radius: 5px;
 }
 
 main .sobre{
