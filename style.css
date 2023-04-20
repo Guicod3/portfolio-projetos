@@ -200,3 +200,32 @@ main .sobre{
     transition: .5s ease-in;
     filter: blur(1px);
 }
+
+.sobre_cont{
+    grid-column: 2/-1;
+    display: grid;
+    color: #707070;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_texto{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_texto h1{
+   font-size: 2.3rem;
+   color: white; 
+    grid-column: 1/-1;
+}
+
+.sobre_texto h1::after{
+    background-color: rgb(107, 60, 32);
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
