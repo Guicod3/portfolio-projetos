@@ -229,3 +229,25 @@ main .sobre{
     display: block;
     border-radius: 5px;
 }
+
+.sobre_texto p{
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.sobre_info{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+
+.sobre_info i{
+    color: rgb(107, 60, 32);
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
