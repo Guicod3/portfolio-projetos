@@ -187,6 +187,7 @@ main .sobre{
 }
 
 .sobre img{
+    animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
     max-width: 91%;
@@ -202,6 +203,7 @@ main .sobre{
 }
 
 .sobre_cont{
+    animation: sobeSecao .6s ease-in-out forwards;
     grid-column: 2/-1;
     display: grid;
     color: #707070;
@@ -250,4 +252,30 @@ main .sobre{
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
+}
+
+.sobre_info p{
+    font-size: .9rem;
+}
+
+@keyframes sobeSecao{
+    from{
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+    }
+
+    to{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoSecao{
+    from{
+        transition: .5s;
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    to{
+        transform: translate3d(0, 0, 0);
+    }
 }
