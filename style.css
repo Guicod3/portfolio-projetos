@@ -192,14 +192,14 @@ main .sobre{
     grid-row: 2;
     max-width: 91%;
     border-radius: 10px;
-    filter: blur(0);
+    filter: blur(1px);
     border: 2px solid #707070;
     box-shadow: 0px 0px 10px rgb(80, 80, 80);
 }
 
 .sobre img:hover{
     transition: .5s ease-in;
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 .sobre_cont{
@@ -288,11 +288,15 @@ main .sobre{
         display: none;
     }
 
-    .section-div{
+    .section-div > foto{
         background-image: url(imagens/eu.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-size: center;
+        filter: blur(2px);
+    }
+
+    .headertexto {
+        filter: blur(none);
     }
 
     /* CONTEUDO SOBRE MIM */ 
