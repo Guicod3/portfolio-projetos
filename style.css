@@ -294,11 +294,20 @@ main .sobre{
         background-size: cover;
     }
 
-    #foto{
-        display: block;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+    header .navegação-primária{
+        display: none;
+    }
+
+    header i{
+        color: #f7f7f7;
+        font-size: 3rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     /* CONTEUDO SOBRE MIM */ 
