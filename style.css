@@ -112,12 +112,6 @@ header > h1> span{
     }
 }
 
-.section-div{
-    background-image: url(imagens/eu.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .fotogrande{
     max-width:1000px;
     max-height:500px;
@@ -292,6 +286,12 @@ main .sobre{
     /*HEADER */
     .section-div img{
         display: none;
+    }
+
+    .section-div{
+        background-image: url(imagens/eu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #foto{
