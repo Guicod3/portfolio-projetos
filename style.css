@@ -112,8 +112,10 @@ header > h1> span{
     }
 }
 
-#foto{
-    display: none;
+.section-div{
+    background-image: url(imagens/eu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fotogrande{
