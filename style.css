@@ -279,3 +279,38 @@ main .sobre{
         transform: translate3d(0, 0, 0);
     }
 }
+
+/* Responsivo */
+
+@media screen and (max-width: 992px){
+    /*HEADER */
+    .section-div img{
+        display: none;
+    }
+
+    .section-div{
+        background-image: url(imagens/eu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: center;
+    }
+
+    /* CONTEUDO SOBRE MIM */ 
+    main .sobre{
+        margin-top: 0;
+    }
+
+    .sobre img{
+        grid-column: 1/-1;
+        align-self: center;
+        margin: auto;
+    }
+
+    .sobre_cont{
+        grid-column: 1/-1;
+    }
+
+    .sobre_texto h1{
+        margin: auto;
+    }
+}
