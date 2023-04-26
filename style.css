@@ -112,7 +112,11 @@ header > h1> span{
     }
 }
 
-.section-div img{
+#foto{
+    display: none;
+}
+
+.fotogrande{
     max-width:1000px;
     max-height:500px;
     width: auto;
@@ -288,15 +292,11 @@ main .sobre{
         display: none;
     }
 
-    .section-div > foto{
-        background-image: url(imagens/eu.jpg);
+    #foto{
+        display: block;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(2px);
-    }
-
-    .headertexto {
-        filter: blur(none);
+        width: 100%;
     }
 
     /* CONTEUDO SOBRE MIM */ 
