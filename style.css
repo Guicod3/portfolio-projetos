@@ -21,7 +21,7 @@ body{
 
 /* HEADER */
 
-header{
+Header{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -41,14 +41,31 @@ header > h1> span{
 
 .navegação-primária{
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 }
 
-.navegação-primária li a{
-    padding: 10px;
+.navegação-primária li a{ 
     color: white;
-    font-size: 1.5rem;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+}
+
+.navegação-primária li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
+}
+
+.navegação-primária li a:hover:after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid rgb(107, 60, 32);
 }
 
 .section-div {
@@ -292,6 +309,7 @@ main .sobre{
         background-image: url(imagens/eu.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     header .navegação-primária{
@@ -327,5 +345,19 @@ main .sobre{
 
     .sobre_texto h1{
         margin: auto;
+    }
+
+    .navegação-primária.ativado{
+      background: linear-gradient(rgb(0, 0, 0), rgb(31, 30, 30));
+      position:absolute;
+      display: grid;
+      top: 70px;
+      color: white;
+      z-index: 1;
+      padding: 30px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      border-radius: 0 0 5px 5px;
+      right: 20px;
     }
 }
