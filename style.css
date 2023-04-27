@@ -155,7 +155,7 @@ header > h1> span{
 /* Seção principal */
 
 main{
-    background-color: #111;
+    background-color: #111111;
     border-radius: 5px;
 }
 
@@ -351,13 +351,14 @@ main .sobre{
       background: linear-gradient(rgb(0, 0, 0), rgb(31, 30, 30));
       position:absolute;
       display: grid;
-      top: 70px;
+      top: 65px;
       color: white;
       z-index: 1;
       padding: 30px;
       font-size: 1.6rem;
       font-weight: bold;
       border-radius: 0 0 5px 5px;
-      right: 20px;
+      right: 45px;
+      animation: inicializar .8s forwards;
     }
 }
